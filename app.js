@@ -1,3 +1,11 @@
-var name = "Everyone!";
+require('./instantHello');
+var goodbye = require('./talk/goodbye');
+var talk = require('./talk');
+var question = require('./talk/question');
 
-console.log("Hello World " + name);
+
+talk.intro();
+talk.hello('Ana')
+var answer = question.ask('What is the meaning of life?');
+console.log(answer);
+goodbye();
