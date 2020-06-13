@@ -1,0 +1,21 @@
+{
+  "name": "mean-app",
+  "version": "1.0.0",
+  "description": "MEAN STACK APP",
+  "main": "app.jss",
+  "scripts": {
+    "start":"node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mean"
+  ],
+  "author": "Full stack training",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "mocha": "^8.0.1"
+  }
+}
