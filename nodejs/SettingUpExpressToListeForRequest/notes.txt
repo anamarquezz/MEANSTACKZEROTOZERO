@@ -8,9 +8,15 @@
 
 
  
-EXPRESS - ROUTING DEFINING URL ROUTES AND SENDING A RESPONSE
+01) EXPRESS - ROUTING DEFINING URL ROUTES AND SENDING A RESPONSE
     - Defining url Routes
         The idea of routing is all about listening for a request on specific urls, doing something on the server and then sending a response 
     - Returning status codes
     - Responding with data
     - Sending HTML response
+
+02) EXPRESS  - SERVING STATIC FILES FROM EXPRESS
+    - Definig static folders
+    - Build basic HTML page
+    - Deliver CSS, images and Javascript
+

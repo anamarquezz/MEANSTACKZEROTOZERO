@@ -11,6 +11,7 @@ app.set('port',3000);
     .send('Express yourself');
 });*/
 
+// (01
 app.get('/', function(req, res){
     console.log("Get the homepage");
     res.status(200)
@@ -33,4 +34,6 @@ var server = app.listen(app.get('port'), function(){ //IS ASYNCHRONOUS
     var port = server.address().port;
     console.log('Magic happens on port ' + port);
 });
+//01)
+
 
