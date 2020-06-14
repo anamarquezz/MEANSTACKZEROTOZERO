@@ -4,19 +4,23 @@ var path = require('path');
 
 
 app.set('port',3000);
+
+//app.use('/public',express.static(path.join(__dirname,'public')));
+
+app.use(express.static(path.join(__dirname,'public')));
                       // req:Requestobject res:Response object
 /*app.get('/', function(req, res){
     console.log("Get the homepage");
     res.status(404)
     .send('Express yourself');
-});*/
+});
 
 // (01
 app.get('/', function(req, res){
     console.log("Get the homepage");
     res.status(200)
     .sendfile(path.join(__dirname,'public','index.html'));
-});
+});*/
 
 app.get('/json', function(req, res){
     console.log("Get the json");

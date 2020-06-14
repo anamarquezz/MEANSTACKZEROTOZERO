@@ -20,3 +20,7 @@
     - Build basic HTML page
     - Deliver CSS, images and Javascript
 
+        app.use(express.static(path.join(__dirname,'public')));
+        app.use('/public',express.static(path.join(__dirname,'public'))); specific route from folder
+
+        
