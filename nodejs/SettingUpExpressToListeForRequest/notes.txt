@@ -37,3 +37,8 @@
         next();
     });
         
+ 04) EXPRESS - USING THE EXPRESS ROUTER
+    - Separation of concerns
+    - Instantiating the ROUTER
+    - Applyring the router to a subset of routers
+    - Testing routes using Postman

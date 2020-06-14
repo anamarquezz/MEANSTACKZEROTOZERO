@@ -2,6 +2,8 @@ var express = require('express');
 var app = express();
 var path = require('path');
 
+var router = require('./public/routes');
+
 
 app.set('port',3000);
 
@@ -17,6 +19,10 @@ app.use(function(req, res, next){
 });
 
 app.use(express.static(path.join(__dirname,'public')));
+
+app.use('/api', router);
+
+
 // req:Requestobject res:Response object
 /*app.get('/', function(req, res){
     console.log("Get the homepage");
