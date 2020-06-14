@@ -5,10 +5,19 @@ var path = require('path');
 
 app.set('port',3000);
 
+
+
 //app.use('/public',express.static(path.join(__dirname,'public')));
 
+
+
+app.use(function(req, res, next){
+    console.log(req.method, req.url);
+    next();
+});
+
 app.use(express.static(path.join(__dirname,'public')));
-                      // req:Requestobject res:Response object
+// req:Requestobject res:Response object
 /*app.get('/', function(req, res){
     console.log("Get the homepage");
     res.status(404)

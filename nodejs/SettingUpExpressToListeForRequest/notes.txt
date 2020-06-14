@@ -23,4 +23,17 @@
         app.use(express.static(path.join(__dirname,'public')));
         app.use('/public',express.static(path.join(__dirname,'public'))); specific route from folder
 
+03) EXPRESS -EXPLORING MIDDLEWARE;
+    - What is middleware?
+    - Create a logging function
+    - When and how to use middleware
+
+    app.use(function(req, res, next){
+       console.log(req.method, req.url);
+    });
+
+    app.use('/css',function(req, res, next){
+        console.log(req.method, req.url);
+        next();
+    });
         
