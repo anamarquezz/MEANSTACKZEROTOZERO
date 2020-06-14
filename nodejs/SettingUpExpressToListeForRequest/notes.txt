@@ -1,0 +1,16 @@
+
+ * how to instantiate express app , 
+ * set a port number using  variables, 
+ * how to read a number using variables , 
+ * listeng for request on a particular port '
+ * app. liste method is asynchronous
+ * 
+
+
+ 
+EXPRESS - ROUTING DEFINING URL ROUTES AND SENDING A RESPONSE
+    - Defining url Routes
+        The idea of routing is all about listening for a request on specific urls, doing something on the server and then sending a response 
+    - Returning status codes
+    - Responding with data
+    - Sending HTML response
