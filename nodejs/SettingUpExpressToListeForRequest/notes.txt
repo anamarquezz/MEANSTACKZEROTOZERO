@@ -81,4 +81,8 @@ npm install -g nodemon //restart server
     - How to install, run and configure
 
 
-
+09) NOSQL databases
+    Types of NOSQL databases
+    - Key-value store
+    - Document sstore
+    - Graph databases

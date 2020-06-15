@@ -1,0 +1,31 @@
+[
+    {
+        "PostId":1,
+        "Title":"My fisrt post",
+        "Content":"Some content",
+        "comments":{
+            "CommentId":1,
+            "Content":"Commenting on your fisrt post"
+        }
+
+    },
+    {
+        "PostId":2,
+        "Title":"My second post",
+        "Content":"Some content",
+        "comments":[{
+            "CommentId":2,
+            "Content":"Commenting on your second post"
+        },{
+            "CommentId":3,
+            "Content":"Also on your second post"
+        }]        
+    },
+    {
+        "PostId":3,
+        "Title":"My third post",
+        "Content":"Some content"        
+        
+    }
+
+]
