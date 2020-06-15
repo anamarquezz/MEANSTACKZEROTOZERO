@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var path = require('path');
 
-var router = require('./public/routes');
+var router = require('./api/routes');
 
 
 app.set('port',3000);

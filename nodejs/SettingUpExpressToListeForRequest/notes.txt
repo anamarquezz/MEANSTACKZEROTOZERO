@@ -42,3 +42,10 @@
     - Instantiating the ROUTER
     - Applyring the router to a subset of routers
     - Testing routes using Postman
+
+05) Using controllers to define funtionality
+    - Organising code to create an Applyring
+    - Defining & exporting controller functions
+    - Map controllers to routes
+    - Get and return data
+    
