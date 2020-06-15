@@ -43,9 +43,14 @@
     - Applyring the router to a subset of routers
     - Testing routes using Postman
 
-05) Using controllers to define funtionality
+05)EXPRESS - USGING CONTROLLERS TO DEFINE FUNCTIONALITY
     - Organising code to create an Applyring
     - Defining & exporting controller functions
     - Map controllers to routes
     - Get and return data
     
+
+06) EXPRESS - DEFINING DYNAMIC ROURTES WITH URL PARAMETERS
+    - What are Url PARAMETERS
+    - Defining url parameters in routes 
+    - Using them in controllers
