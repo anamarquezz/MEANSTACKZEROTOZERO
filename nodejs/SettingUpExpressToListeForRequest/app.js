@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 var path = require('path');
+var bodyParser = require('body-parser');
 
 var router = require('./api/routes');
 
@@ -19,6 +20,8 @@ app.use(function(req, res, next){
 });
 
 app.use(express.static(path.join(__dirname,'public')));
+
+app.use(bodyParser.urlencoded({ extended:false})); //false -> only need strings and Arrays in form body, True => another data types
 
 app.use('/api', router);
 
