@@ -8,8 +8,6 @@ var router = require('./api/routes');
 
 app.set('port',3000);
 
-
-
 //app.use('/public',express.static(path.join(__dirname,'public')));
 
 

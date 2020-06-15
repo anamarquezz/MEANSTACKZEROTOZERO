@@ -19,6 +19,8 @@ npm install express --save
 
  npm install --save body-parser
 
+npm install -g nodemon //restart server
+
 
  
 01) EXPRESS - ROUTING DEFINING URL ROUTES AND SENDING A RESPONSE
@@ -72,3 +74,11 @@ npm install express --save
     - Getting querystring data in controllers
     - Adding middleware for parsing forms
     - Getting form data in controllers
+
+08) EXPRESS -  IMPROVING MEAN DEVELMENT WORKFLOW WITH NODEMON
+    - What Nodemon is
+    - Why it's good for you workflow 
+    - How to install, run and configure
+
+
+
