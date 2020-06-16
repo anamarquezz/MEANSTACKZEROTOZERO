@@ -81,8 +81,13 @@ npm install -g nodemon //restart server
     - How to install, run and configure
 
 
-09) NOSQL databases
+09) NOSQL - databases
     Types of NOSQL databases
     - Key-value store
     - Document sstore
     - Graph databases
+
+10) MONGODB - the basics
+    - A deeper look at MONGODB collections
+    - JSON and BSON
+    - Unique IDs in MongoDB documents
