@@ -91,3 +91,68 @@ npm install -g nodemon //restart server
     - A deeper look at MONGODB collections
     - JSON and BSON
     - Unique IDs in MongoDB documents
+
+11) MONGODB - Getting Started with the Mongo Shell
+    - Listing databases and collections
+    - Creating databases, collections and documents
+    - Retrieving documents.
+
+        -- commands --
+            $ mongoDB o mongo db
+                | show all databases | 
+                    > shows dbs
+                | use database |
+                    > use local
+                | show all the  collections |
+                    > show collections
+                | Create a database > use a database that does not exist |
+                    > use meantest
+                    > show dbs
+                    > show collections
+                    > use meantest
+                    > db.createCollection('tech') --name of the collections
+                    > show dbs
+                    > show collections 
+                | Create a document |
+                    >  db.tech.insert({
+                         name:'MongoDB',
+                         role:'Database'
+                       })
+                | Build  a query |
+                    | Find All |
+                        > db.tech.find() -- Find everything  __id unique identify  ObjectId 
+                    | Find ALL Pretty |
+                        > db.tech.find().pretty()
+                    | insert an Array |
+                        > db.tech.insert(
+                            [
+                                {
+                                    name:"Express",
+                                    role:'Web application server'
+                                },
+                                {
+                                    name: 'Angular',
+                                    role:'Front-end framework'
+                                },
+                                {
+                                    name:'Node.js',
+                                    role:'Platform'
+                                    
+                                }
+                            ]
+                        )
+
+                        -- Message OK
+                            BulkWriteResult({
+                            "writeErrors" : [ ],
+                            "writeConcernErrors" : [ ],
+                            "nInserted" : 3,
+                            "nUpserted" : 0,
+                            "nMatched" : 0,
+                            "nModified" : 0,
+                            "nRemoved" : 0,
+                            "upserted" : [ ]
+                        })
+
+                    | Find All Again |                
+                        > db.tech.find().pretty()
