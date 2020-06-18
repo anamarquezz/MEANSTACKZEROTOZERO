@@ -156,3 +156,20 @@ npm install -g nodemon //restart server
 
                     | Find All Again |                
                         > db.tech.find().pretty()
+
+12) MongoDB - Interacting with data from the command line (Mongo shell)
+    - queryinhg the database to find documents
+    - Modifying the data returned: e.g sorting
+    - Updating documents
+    - Deleting documents 
+
+        | find documents |
+            > db.tech.find({"_id" : ObjectId("5ee8659af58cb7af1a201d0a")})
+            > db.tech.find({"name" : "Angular"}) 
+        
+        | ORDER |        
+            > db.tech.find().sort({"name":1}) Descending
+            > db.tech.find().sort({"name":-1})  ASC
+        | Projections | 
+            > db.tech.find({},{name:true})  only name and id
+            > db.tech.find({},{name:true,"_id":false}) or db.tech.find({},{name:true,"_id":0}) -> onlye name without id
