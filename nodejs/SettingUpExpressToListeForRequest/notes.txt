@@ -173,3 +173,25 @@ npm install -g nodemon //restart server
         | Projections | 
             > db.tech.find({},{name:true})  only name and id
             > db.tech.find({},{name:true,"_id":false}) or db.tech.find({},{name:true,"_id":0}) -> onlye name without id
+            > db.tech.find({},{"name":1,"_id":0})
+         
+        | UPDATE | 
+            > db.tech.update({ "name":"Angular"}, {$set:{"name":"AngularJS"}})
+        
+        | Update Multipe Documents | 
+            > db.tech.update(
+                {},
+                { $set: {"language":"JavaScript"}},
+                { multi : true }
+            )
+
+        | DELETE |
+            > db.tech.remove( {"name":"Express"})
+        
+        | DELETE ALL DOCUMENTS |
+            > db.tech.remove( {} )
+        
+        | Delete Collections |
+            > db.tech.drop() 
+
+
