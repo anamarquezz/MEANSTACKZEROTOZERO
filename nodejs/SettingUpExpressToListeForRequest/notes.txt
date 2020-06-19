@@ -194,4 +194,31 @@ npm install -g nodemon //restart server
         | Delete Collections |
             > db.tech.drop() 
 
+13) MONGODB - IMPORTING AND EXPORTING DATA
+    - Exporting & imporing BSON data
+    - Exporting & Importing JSON data
+    - When to use the different approaches
+
+    | EXPORT DE DATA |
+        Run
+           > mongdump --db meantest
+           > ls dump
+           > ls meantest
+           > cd ../
+           > rm -rf meantest
+           > cd ../
+           > mongodump --db meantest --gzip
+           > cd dump/meantest
+        
+    | IMPORT DE DATA | 
+        > mongorestore --db mean2 --gzip dump/meantest
+        
+        on mongo..
+            > show dbs 
+            > use mean2 
+            > show collections 
+            > db.tech.find() 
+
+
+    
 
