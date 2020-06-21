@@ -249,3 +249,11 @@ npm install -g nodemon //restart server
             var dbconn = require('../data/dbconnection.js');
             console.log("db", db);
 
+15)  MongoDB - Querying the database from Node.js
+    - Using the open database  connection 
+    - Finding multiple documents in a collection
+    - Returning a sub-set 
+    - Searching for a single document by ID
+        
+        var collection = db.collection('hotels');
+

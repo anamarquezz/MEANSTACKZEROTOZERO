@@ -1,7 +1,7 @@
 
 
 var MongoClient = require('mongodb'),MongoClient; //drive
-var dburl = 'mongodb://127.0.0.1:27017/meanhotel';
+var dburl = 'mongodb://127.0.0.1:27017';
 
 var _connection = null;
 //open the connection
@@ -13,8 +13,8 @@ var open = function(){
             return;
 
         }
-        _connection = db;
-        console.log("DB connection open", db);
+        _connection = db.db('meanhotel');
+       // console.log("DB connection open", db);
     });
 };
 
