@@ -7,7 +7,6 @@
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  
   "keywords": [
     "mean"
   ],
@@ -15,7 +14,8 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "mongodb": "^3.5.9"
   },
   "devDependencies": {
     "mocha": "^2.3.3"

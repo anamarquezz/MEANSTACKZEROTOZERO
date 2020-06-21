@@ -231,4 +231,21 @@ npm install -g nodemon //restart server
         > mongoimport --db mean3 --collection tech --jsonArray api/data/tech.json
 
     
+14) MongoDB Conecting to a Node.js Application
+    - Installing the driver
+    - Creating a reusable connection
+    - Defining a connection sorting
+    - Accessing the connection from controllers
+    - Best Practices
+
+    >  mongoimport --db meanhotel --collection hotel --jsonArray api/data/hotel-data.json
+    >  npm install mongodb --save 
+    -- Creating of dbconnection.js
+
+        | how to call in app.js | Inicialice
+            require('./api/data/dbconnection.js').open();
+        
+        | how to call in controller |
+            var dbconn = require('../data/dbconnection.js');
+            console.log("db", db);
 
