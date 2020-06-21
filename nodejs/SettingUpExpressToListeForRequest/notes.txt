@@ -209,7 +209,8 @@ npm install -g nodemon //restart server
            > cd ../
            > mongodump --db meantest --gzip
            > cd dump/meantest
-        
+    
+ 
     | IMPORT DE DATA | 
         > mongorestore --db mean2 --gzip dump/meantest
         
@@ -219,6 +220,15 @@ npm install -g nodemon //restart server
             > show collections 
             > db.tech.find() 
 
+    
+    MONGOIMPORT 
+                                   
+    | EXPORT JSON |
+        > mongoexport --db meantest --collection tech --out /api/data/tech.json
+        > mongoexport --db meantest --collection tech --out /api/data/tech.json --jsonArray
+
+    | IMPORT JSON |
+        > mongoimport --db mean3 --collection tech --jsonArray api/data/tech.json
 
     
 
