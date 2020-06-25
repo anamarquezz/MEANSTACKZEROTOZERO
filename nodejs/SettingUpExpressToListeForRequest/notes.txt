@@ -256,4 +256,5 @@ npm install -g nodemon //restart server
     - Searching for a single document by ID
         
         var collection = db.collection('hotels');
+        var docs = collection.find();
 
